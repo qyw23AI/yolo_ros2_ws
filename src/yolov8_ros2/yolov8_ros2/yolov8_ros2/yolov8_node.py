@@ -1,5 +1,5 @@
-#!/home/ldl/anaconda3/envs/yolov8/bin/python
-# -*- coding: utf-8 -*-
+
+# -*- coding : utf-8 -*-
 
 # 导入必要的库
 import cv2              # OpenCV库，用于图像处理
@@ -26,12 +26,12 @@ class YoloDectNode(Node):
 
         # 声明并获取参数
         self.declare_parameter('weight_path', 'yolov8n.pt')
-        self.declare_parameter('image_topic', '/camera/color/image_raw')
+        self.declare_parameter('image_topic', '/camera/camera/image_raw')
         self.declare_parameter('pub_topic', '/yolov8/BoundingBoxes')
         self.declare_parameter('camera_frame', '')
         self.declare_parameter('conf', 0.5)
-        self.declare_parameter('visualize', True)
-        self.declare_parameter('use_cpu', False)
+        self.declare_parameter('visualize', False)
+        self.declare_parameter('use_cpu', True)
 
         # 获取参数值
         weight_path = self.get_parameter('weight_path').get_parameter_value().string_value

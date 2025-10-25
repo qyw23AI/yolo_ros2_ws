@@ -14,13 +14,12 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='ldl',
-    maintainer_email='ldl@todo.todo',
+    maintainer_email='3082128164@qq.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            #!/home/ldl/anaconda3/envs/yolov8/bin/python
             'yolov8_node = yolov8_ros2.yolov8_node:main'
         ],
     },

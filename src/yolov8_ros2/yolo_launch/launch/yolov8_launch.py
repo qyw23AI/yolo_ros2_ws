@@ -23,7 +23,7 @@ def generate_launch_description():
     
     declare_image_topic_arg = DeclareLaunchArgument(
         'image_topic',
-        default_value='/camera/color/image_raw',
+        default_value='/camera/camera/image_raw',
         description='Input image topic name'
     )
     
@@ -35,7 +35,7 @@ def generate_launch_description():
         output='screen',
         parameters=[config_file],
         remappings=[
-            ('/camera/color/image_raw', image_topic)
+            ('/camera/camera/image_raw', image_topic)
         ]
     )
     

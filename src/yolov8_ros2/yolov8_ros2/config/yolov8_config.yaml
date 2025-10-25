@@ -6,7 +6,7 @@
     visualize: true            # 是否显示可视化窗口
     
     # ROS话题参数
-    image_topic: "/camera/color/image_raw"  # 输入图像话题
+    image_topic: "/camera/camera/image_raw"  # 输入图像话题
     pub_topic: "/yolov8/BoundingBoxes"      # 输出边界框话题
     
     # 相机参数

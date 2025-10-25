@@ -4,7 +4,7 @@
   <name>yolov8_ros2</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="ldl@todo.todo">ldl</maintainer>
+  <maintainer email="3082128164@qq.com">qyw23AI</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
